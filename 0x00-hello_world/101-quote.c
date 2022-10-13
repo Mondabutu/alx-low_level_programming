@@ -1,6 +1,10 @@
+#include <stdio.h>
 #include <unistd.h>
+
 /**
- * main - Entry point  
+ *
+ * main - prints exactly 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
