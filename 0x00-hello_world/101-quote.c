@@ -1,8 +1,9 @@
 #include <unistd.h>
+
 /**
- * main - write to stdout
+ * main - Entry point
  *  
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
