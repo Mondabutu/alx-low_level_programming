@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
-
 /**
- *
- * main - prints exactly 
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
