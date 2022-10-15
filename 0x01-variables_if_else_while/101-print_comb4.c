@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -print diffreent digits 
+ * main - print different comb
  *
  * Return: Always return 0
  */
