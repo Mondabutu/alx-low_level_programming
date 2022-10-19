@@ -12,7 +12,7 @@ int main(void)
 	n = 1;
 	p = 2;
 	sum = 0;
-	for (m = 1; m <= 33; ++i)
+	for (m = 1; m <= 33; ++m)
 	{
 		if (n < 4000000 && (n % 2) == 0)
 		{
