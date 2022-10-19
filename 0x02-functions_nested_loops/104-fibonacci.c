@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int i;
 	unsigned long int befr = 1;
 	unsigned long int aftr = 2;
-	unsigned long int k = 1000000000;
+	unsigned long int k = 10000000000;
 	unsigned long int befr1;
 	unsigned long int befr2;
 	unsigned long int aftr1;
