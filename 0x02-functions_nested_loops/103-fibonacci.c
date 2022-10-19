@@ -9,6 +9,7 @@ int main(void)
 { 
 	int m;
 	unsigned long int n, p, nxt, sum;
+	
 	n = 1;
 	p = 2;
 	sum = 0;
