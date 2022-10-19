@@ -6,7 +6,7 @@
  * @d: int to be added to a
  * Return: sim of a and d
  */
-int add (int a, int d)
+int add(int a, int d)
 {
 	int b;
 
