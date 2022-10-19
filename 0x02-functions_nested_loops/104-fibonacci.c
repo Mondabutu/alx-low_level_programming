@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 /**
  * main - Write a program that finds and prints the first 98 Fibonacci numbers, 
- * starting with 1 and 2, followed by a new line
- * 
+ * starting with 1 and 2, followed by a new line 
  * Return: Success
  */
 int main(void)
@@ -28,7 +26,6 @@ int main(void)
 	befr2 = (befr % k);
 	aftr1 = (aftr / k);
 	aftr2 = (aftr % k);
-
 	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", aftr1 + (aftr2 / k));
