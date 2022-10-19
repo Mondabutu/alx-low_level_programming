@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long int f1 =0, b1 = 1, f2 = 0, b2 = 2;
+	unsigned long int f1 = 0, b1 = 1, f2 = 0, b2 = 2;
 	unsigned long int h1, h2, h3;
 	int count;
 
@@ -29,7 +29,7 @@ int main(void)
 			b1 = b2, b2 = h2;
 			printf("%lu", b2);
 		}
-		if(count != 97)
+		if (count != 97)
 			printf(", ");
 	}
 	printf("\n");
