@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mul - the input 
+ * mul - the input
  * @a: first integer
  * @b: second integer
  * Return: Answer
