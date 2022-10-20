@@ -7,9 +7,9 @@
 
 int main(void)
 {
-	long n = 612852475143;
+	unsigned long n = 612852475143;
 	int d = 2;
-	long p;
+	unsigned long p;
 
 	while (n != 1)
 	{
