@@ -7,20 +7,16 @@
 
 int main(void)
 {
-	unsigned long n = 612852475143;
-	int d = 2;
-	unsigned long p;
+	long n, d;
 
-	while (n != 1)
+	n = 612852475143;
+	for (d = 2; d < n; d++)
 	{
-		if (n % d == 0)
-		{
+		while (n % d == 0)
 			n = n / d;
-			p = d;
-		}
-		d++;
+
 	}
-	printf("%1d\n", p);
+	printf("%lu\n", n);
 
 	return (0);
 }
