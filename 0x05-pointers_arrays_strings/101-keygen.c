@@ -20,8 +20,8 @@ int main(void)
 	for (k = 0; k < 120; k++)
 	{
 		pass[k] = rand() % 78;
-		sum += (pass[k] + '0');
-		putchar(pass[k] + '0');
+		sum += (password[k] + '0');
+		putchar(password[k] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
 			n = 2772 - sum - '0';
