@@ -7,6 +7,7 @@
  * @n: times to print elements
  * Return: No return
  */
+
 void print_array(int *a, int n)
 {
 	int m;
