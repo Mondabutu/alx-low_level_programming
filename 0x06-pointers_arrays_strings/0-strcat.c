@@ -2,14 +2,14 @@
 
 /**
  * _strcat - Concatenates twp strings
- * @src: The source string to be appended to 
+ * @src: The source string to be appended to
  * @dest: The destination of the pointer
  * Return: A pointer to the destination string
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int k = 0, m =0;
+	int k = 0, m = 0;
 
 	while (dest[k++])
 		m++;
