@@ -9,21 +9,22 @@
 
 char *leet(char *s)
 {
-	char *r = s;
-	char s1[] = { 'a', 'e', 'o', 't', 'l' };
-	char s2[] = { 4, 3, 0, 7, 1};
+	int m, k;
+
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
 	int m = 0;
 
-	while (*s)
+	for (m = 0; s[m] != '\0'; m++)
 	{
-		for (m = 0; m < 5; m++)
+		for (k = 0; k < 10; k++)
 		{
-			if (*s == s1[m] || *s == s1[m] - 32)
+			if (s[m] == a[k] - 32)
 			{
-				*s = s2[m] + '0';
+				s[m] = b[k];
 			}
 		}
-		s++;
+
 	}
-	return (r)
+	return (s)
 }
