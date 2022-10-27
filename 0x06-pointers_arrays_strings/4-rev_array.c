@@ -7,7 +7,7 @@
  * @n: is the number of elements
  * Return: Always 0
  */
-void reverse_array (int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int m = 0;
 	int T;
