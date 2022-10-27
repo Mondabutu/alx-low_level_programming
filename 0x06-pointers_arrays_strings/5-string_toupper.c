@@ -14,7 +14,7 @@ void *string_toupper(char *s)
 	{
 		if ((s[k] >= 97) && (s[k] <= 122))
 		{
-			s[k] = s[k] = 32
+			s[k] = s[k] - 32
 		}
 		k++;
 	}
