@@ -6,13 +6,13 @@
  * Return: Always 0
  */
 
-void *string_toupper(char *s)
+char *string_toupper(char *s)
 {
 	int k = 0;
 
 	while (s[k] != '\0')
 	{
-		if ((s[k] >= 97) && (s[k] <= 122))
+		if ((s[k] >= 'a') && (s[k] <= 'z'))
 		{
 			s[k] = s[k] - 32;
 			k++;
