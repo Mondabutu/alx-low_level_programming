@@ -9,10 +9,10 @@
 
 char *leet(char *s)
 {
-	int m = 0;
 	char *r = s;
-	char s1[] = {'a', 'e', 'o', 't', 'l'};
-	char s2[] = {4, 3, 0, 7, 1};
+	char s1[] = { 'a', 'e', 'o', 't', 'l' };
+	char s2[] = { 4, 3, 0, 7, 1};
+	int m = 0;
 
 	while (*s)
 	{
