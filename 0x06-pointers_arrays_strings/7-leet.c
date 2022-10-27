@@ -10,18 +10,17 @@
 char *leet(char *s)
 {
 	int m, k
-		char c[] = "aAeEoOtTlL";
-		char n[] = "4433007711";
+		char c[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'}; 
 
 		m = 0;
-		while (s[m] != '\0')
+		while (s[m] )
 		{
-			k = 0;
-			while (c[k] != '\0')
+
+			for (k = 0; k <= 7; k++)
 			{
-				if (s[m] == c[k])
+				if (s[m] == c[k] || s[m] - 32 == c[k])
 				{
-					s[m] = n[k];
+					s[m] = k + 0;
 				}
 				k++
 			}
