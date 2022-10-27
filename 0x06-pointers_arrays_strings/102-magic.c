@@ -1,7 +1,7 @@
 #include <studio.h>
 
 /**
- * main -magic 
+ * main -magic
  * Return: always 0
  */
 
