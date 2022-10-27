@@ -9,7 +9,7 @@
 
 char *cap_string(char *s)
 {
-	int m = 0;
+	int m = 0, n = 0;
 	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
 
 	while (s[m] != '\0')
@@ -18,7 +18,6 @@ char *cap_string(char *s)
 		{
 			s[m] = s[m] - 32;
 		}
-		n = 0;
 		while (c[n] != '\0')
 		{
 
