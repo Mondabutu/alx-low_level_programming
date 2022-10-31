@@ -8,14 +8,11 @@
  * Return: pointer  to beginning of memory area
  */
 char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int k = 0;
-	char *st = s;
 
-	while (k < n)
+{	while (n)
 	{
-		*s++ = b;
-		k++;
+		s[n - 1] = b;
+		n--;
 	}
-	return (st);
+	return (s);
 }
