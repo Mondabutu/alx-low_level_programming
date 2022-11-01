@@ -4,6 +4,7 @@
  * _strpbrk - return pointer to byte in s that matches a byte in accept
  *
  * @s: string to search
+ *
  * @accept: target matches
  * Return: pointer to index of string at first occurence
  */
@@ -17,11 +18,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[k] == accept[p])
 			{
-				s = &s[x];
+				s = &s[k];
 				return (s);
 			}
 		}
-		k++
+		k++;
 	}
 	return (NULL);
 }
