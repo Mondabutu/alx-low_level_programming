@@ -6,7 +6,7 @@
  * @k: Number suare root
  * Return: -1 if non natural squate root
  */
-int sqrt_num(int p, int k)
+int sqrt_num(int k, int p)
 {
 	if (p * p > k)
 
