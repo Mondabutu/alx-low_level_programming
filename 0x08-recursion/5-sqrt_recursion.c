@@ -8,18 +8,18 @@
  */
 int sqrt_num(int p, int k)
 {
-	if (p * p == k)
-	{
-		return (p);
-	}
-	else if (p * p > k)
-	{
+	if (p * p > k)
+
 		return (-1);
-	}
+
+	else if (p * p == k)
+
+		return (p);
+
 	else
-	{
-		return (sqrt_num(p + 1, k));
-	}
+
+		return (sqrt_num(k, p + 1));
+	return (1);
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
