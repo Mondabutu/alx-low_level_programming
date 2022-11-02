@@ -2,7 +2,7 @@
 
 /**
  * evaluate_prime - evaluate prime number
- * @m: The number
+ * @num: The number
  * @k: Number to iterate
  * Return: return 0 or 1
  */
