@@ -28,7 +28,5 @@ int sqrt_num(int p, int k)
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
-		return (0);
 	return (sqrt_num(n, 1));
 }
