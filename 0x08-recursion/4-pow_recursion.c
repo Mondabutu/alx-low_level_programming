@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * _pow_recursion - functions that reurn the value of power
