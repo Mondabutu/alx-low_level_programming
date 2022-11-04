@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * Main - Program that prints number argurments passed
+ * main - Program that prints number argurments passed
  * @argc: count the argumments pass
  * @argv: Argument passed
  * Return: Always 0 (success)
