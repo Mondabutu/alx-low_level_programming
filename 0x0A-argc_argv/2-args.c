@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	{
 		while (k < argc)
 		{
-			printf("%s\n", argv[count]);
-			count++;
+			printf("%s\n", argv[k]);
+			k++;
 		}
 	}
 	return (0);
