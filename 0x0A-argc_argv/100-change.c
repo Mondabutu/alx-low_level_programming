@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int pos, sum, change, extra;
 	int coins[] = {25, 10, 5, 2, 1};
 
-	pos = extra = change = sum = 0;
+	pos = sum  = change = extra = 0;
 
 	if (argc != 2)
 	{
@@ -27,13 +27,14 @@ int main(int argc, char *argv[])
 
 	while (coins[pos] != '\0')
 	{
+		if (sum >= coins[pos])
+		{
 		extra = (sum / coins[pos]);
 		change += extra;
 		sum -= coins[pos] * extra;
+		}
+		pos++;
 	}
-	pos++;
-}
-print("%d\n", change);
-
-return (0);
+	printf("%d\n", change);
+	return (0);
 }
