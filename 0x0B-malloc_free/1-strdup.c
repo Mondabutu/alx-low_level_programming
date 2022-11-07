@@ -20,7 +20,8 @@ int _strlen(char *s)
 }
 /**
  * _strcpy - This copies the arrays
- * @src: Elements of the array
+ * @src: Source of Elements of the array
+ * @dest: the destination
  * Return: dest
  */
 char *_strcpy(char *dest, char *src)
@@ -57,6 +58,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	_strcpy(dst, str);
-	return (dst);
+	_strcpy(d, str);
+	return (d);
 }
