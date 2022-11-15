@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * new_dog _ the new dog
+ * new_dog - the new dog
  * @name: the name of the dog
  * @age: the age of the dog
  * @owner: the owner o the dog
