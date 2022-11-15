@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(doga);
 		return (NULL);
 	}
-	doga->name == NULL)
+	if (doga->name == NULL)
 	{
 		free(doga->name);
 		free(doga);
