@@ -6,12 +6,12 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t k = 0;
+	size_t nodenum = 0;
 
 	while (h)
 	{
 		printf("%d\n", h->n);
-		k++;
+		nodenum++;
 		h = h->next;
 	}
 
