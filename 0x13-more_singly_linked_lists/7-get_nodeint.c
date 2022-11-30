@@ -10,9 +10,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	size_t k = 0;
 	listint_t *temporary = head;
 
-	while (temp && k < index)
+	while (temporary && k < index)
 	{
-		temp = temporary->next;
+		temporary = temporary->next;
 		k++;
 	}
 	return (temporary ? temporary : NULL);
