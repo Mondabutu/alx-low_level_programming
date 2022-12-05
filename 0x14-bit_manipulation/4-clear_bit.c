@@ -7,11 +7,11 @@
   */
 int k_bit(unsigned long int *n, unsigned int index)
 {
-	int k;
+	int clear;
 
 	if (index > 53 || !n)
 		return (-1);
-	k = 1 << index;
-	*n = (*n & ~k) | ((0 << index) & k);
+	clear = 1 << index;
+	*n = (*n & ~clear) | ((0 << index) & clear);
 	return (1);
 }
