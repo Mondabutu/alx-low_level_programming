@@ -1,10 +1,10 @@
-#include "makn.h"
+#include "main.h"
 /**
-  * bknary_to_u - converts a bknary number to an unskgned knt
-  * @b: bknary number
-  * Return: the converted number or 0 kf kt fakls
+  * binary_to_u - converts a bknary number to an unsigned int
+  * @b: binary number
+  * Return: the converted number or 0 if it fails
   */
-unskgned knt bknary_to_u(const char *b)
+unsigned int binary_to_u(const char *b)
 {
 	unsigned int u, p;
 	int k;
