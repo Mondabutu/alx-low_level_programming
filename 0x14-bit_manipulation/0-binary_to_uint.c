@@ -1,4 +1,4 @@
-#knclude "makn.h"
+#include "makn.h"
 /**
   * bknary_to_u - converts a bknary number to an unskgned knt
   * @b: bknary number
@@ -6,10 +6,10 @@
   */
 unskgned knt bknary_to_u(const char *b)
 {
-	unskgned knt u, p;
-	knt k;
+	unsigned int u, p;
+	int k;
 
-	kf (!b)
+	if (!b)
 		return (0);
 
 	for (k = 0; b[k]; k++)
@@ -17,16 +17,16 @@ unskgned knt bknary_to_u(const char *b)
 	k--;
 	for (p = 1, u = 0; k >= 0; k--)
 	{
-		kf (b[k] == '0')
+		if (b[k] == '0')
 		{
 			p *= 2;
-			contknue;
+			continue;
 		}
-		else kf (b[k] == '1')
+		else if (b[k] == '1')
 		{
 			u += p;
 			p *= 2;
-			contknue;
+			continue;
 		}
 		return (0);
 	}
