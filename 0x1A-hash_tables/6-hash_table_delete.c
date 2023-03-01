@@ -1,8 +1,3 @@
-/*
- * File: 6-hash_table_delete.c
- * Auth: Gedeon Obae Gekonge
-*/
-
 #include "hash_tables.h"
 
 /**
@@ -13,13 +8,13 @@ void hash_table_delete(hash_table_t *ht)
 {
 	hash_table_t *head = ht;
 	hash_node_t *node, *tmp;
-	unsigned long int k;
+	unsigned long int i;
 
-	for (k = 0; k < ht->size; k++)
+	for (i = 0; i < ht->size; i++)
 	{
 		if (ht->array[i] != NULL)
 		{
-			node = ht->array[k];
+			node = ht->array[i];
 			while (node != NULL)
 			{
 				tmp = node->next;

@@ -1,8 +1,3 @@
-/*
- * File: 1-djb2.c
- * Auth: Gedeon Obae Gekonge
- */
-
 #include "hash_tables.h"
 
 /**
@@ -11,14 +6,15 @@
  *
  * Return: The calculated hash.
  */
+
 unsigned long int hash_djb2(const unsigned char *str)
 {
 	unsigned long int hash;
-	int k;
+	int count;
 
 	hash = 5381;
-	while ((k = *str++))
-		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+	while ((count = *str++))
+		hash = ((hash << 5) + hash) + count; /* hash * 33 + count */
 
 	return (hash);
 }
