@@ -1,17 +1,15 @@
 #include "main.h"
+#include <stdlib.h>
 /**
-  * k_bit - This sets the value of a bit to 0 at a given index
-  * @n: unsigned long into change
-  * @index: index to change to zero
-  * Return: 1 if it worked or -1 if an error occurred
-  */
-int k_bit(unsigned long int *n, unsigned int index)
+ * clear_bit - sets the value of a bit to 0 at a given index
+ * @n: parameter
+ * @index: index
+ * Return: 1 if works, -1 if error
+ */
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int clear;
-
-	if (index > 53 || !n)
+	if (index > sizeof(n) * 8)
 		return (-1);
-	clear = 1 << index;
-	*n = (*n & ~clear) | ((0 << index) & clear);
+	*n &= ~(1 << index);
 	return (1);
 }
