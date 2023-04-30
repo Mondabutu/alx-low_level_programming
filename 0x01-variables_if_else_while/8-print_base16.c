@@ -1,20 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - print base sixtee
- *
- * Return: Always 0
+ * main - prints all the numbers of base 16 in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int numb;
-	char L;
+	int n;
+	char ch;
 
-	for (numb = 0; numb < 10; numb++)
-		putchar((num % 10) + '0');
 
-	for (L = 'a'; L <= 'f'; L++)
-		putchar(L);
+	for (n = '0'; n <= '9'; n++)
+
+		putchar(n);
+
+	for (ch = 'a'; ch <= 'f'; ch++)
+
+		putchar(ch);
 
 	putchar('\n');
+
 	return (0);
 }
