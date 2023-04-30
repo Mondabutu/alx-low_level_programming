@@ -1,27 +1,32 @@
 #include <stdio.h>
+
 /**
- * main -print combinations of two
- *
- * Return: Always 0
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
+
 int main(void)
 {
-	int da, daa;
+	int d, p;
 
-	for (da = 0; daa < 9; da++)
+	for (d = '0'; d < '9'; d++)
 	{
-		for (daa = da + 1; daa < 10; daa++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			putchar((da % 10) + '0');
-			putchar((daa % 10) + '0');
+			if (p != d)
+			{
+				putchar(d);
+				putchar (p);
 
-			if (da == 8 && daa == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+				if (d == '8' && p == '9')
+					continue;
 
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
