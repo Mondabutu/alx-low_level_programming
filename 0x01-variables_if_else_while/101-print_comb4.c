@@ -1,30 +1,36 @@
 #include <stdio.h>
+
 /**
- * main - print different comb
- *
- * Return: Always return 0
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int d1, d2, d3;
+	int d, p, q;
 
-	for (d1 = 0; d2 < 8; d1++)
+	for (d = '0'; d < '9'; d++)
 	{
-		for (d2 = d1 + 1; d2 < 9; d2++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			for (d3 = d2 + 1; d3 < 10; d3++)
+			for (q = p + 1; q <= '9'; q++)
 			{
-				putchar((d1 % 10) + '0');
-				putchar((d2 % 10) + '0');
-				putchar((d3 % 10) + '0');
+				if ((p != d) != q)
+				{
+					putchar(d);
+					putchar(p);
+					putchar(q);
 
-				if (d1 == 7 && d2 == 8 && d3 == 9)
-					continue;
-				putchar(',');
-				putchar(' ');
+					if (d == '7' && p == '8')
+						continue;
+
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
+
 	return (0);
 }
